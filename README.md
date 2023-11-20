@@ -46,7 +46,7 @@ This data can more easily be visualized with a horizontal barchart (numpy, matpl
 
 ![5 top 10 artists](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/2cd8095b-dade-49f0-b86b-c2607a1e8b82)
 
-Tracks can be analyzed by multiple elements. In the scatterplot below, the top 100 popular tracks of the dataset are organized by 'Danceability' and 'Polpularity' scores. The size of the dots are determined by 'Tempo' and the colors are based on the 'Energy' score of the tracks. 
+Tracks can be analyzed by multiple elements and dimensions. In the scatterplot below, the top 100 popular tracks of the dataset are organized by 'Danceability' and 'Polpularity' scores. The size of the dots are determined by 'Tempo' and the colors are based on the 'Energy' score of the tracks. 
 
 ![5 7 Danceability by Popularity sized by Tempo colored by energy](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/f24a442f-d063-4e03-b891-6dcf8d73ff54)
 _See jupyter notebook for additional analyses of the dataset._
