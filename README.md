@@ -1,9 +1,13 @@
 # Spotify Data Analysis
 ## Introduction
-
+### Tools
+- Spotify Developer API ([Link to Spotify API documentation](https://developer.spotify.com/documentation/web-api))
+- Python 3.10
+- GPT 4
+  
 ## Analysis
 ### Step 1 - Create datasets
-Data was collected using the Spotify Developer API. ([Link to Spotify API documentation](https://developer.spotify.com/documentation/web-api)).
+The first step was to write a script to call the Spotify API and retrieve tracks and track details.
 
 Datasets created:
 - Spotify new releases (albums & singles)
