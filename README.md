@@ -7,11 +7,17 @@
   
 ## Analysis
 ### Step 1 - Create datasets
-The first step was to write a script to call the Spotify API and retrieve tracks and track details.
+This readme details the steps taken to retreive Spotify tracks by genre and analysis of said data. Data is stored in a pandas dataframe and then exported to a csv.
 
-Datasets created:
-- Spotify new releases (albums & singles)
-- Spotify tracks by genre
+The first step was to write a script to call the Spotify API and retrieve tracks and track details. The script loops through the main genre nodes and retrieves a variable number of tracks per genre. For this sample dataset, the number of tracks per genre was limited to 10.
+
+~
+
+_**Additional datasets created using a Python script + Spotify's developer API:**_
+
+_- Spotify new releases (albums & singles)_
+
+
 
 ### Step 2 - Exploratory analysis
 Some of the columns needed to be converted and properly formatted before continuing.
