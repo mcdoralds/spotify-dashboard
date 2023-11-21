@@ -1,9 +1,12 @@
 # Spotify Data Analysis
+NOTE: THE CURRENT PROJECT IS A WIP AS OF 20 NOV 2023
+
 ## Introduction
 ### Tools
 - Spotify Developer API ([Link to Spotify API documentation](https://developer.spotify.com/documentation/web-api))
 - Python 3.10
 - GPT 4
+- Tableau Public
   
 ## Analysis
 ### Step 1 - Create datasets
@@ -66,4 +69,5 @@ This may result in some interesting observations and conclusions.
 
 ### Step 4 - Visualization & dashboarding
 
+## Challenges
 ## Results
