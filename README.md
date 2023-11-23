@@ -77,12 +77,12 @@ This may result in some interesting observations and conclusions.
 
 ### Step 4 - Visualization & dashboarding
 
+### * * * II.  * * *
 #### Challenges
 ERROR 429 - Timeout errors when attempting to repeat process with an increased number of tracks collected: 
 
 ![2 1 api call error](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/b5381544-01b0-42b9-ba0d-fb09e349e5c4)
 
-### * * * II.  * * *
 - Include genre as a column
 - Record more tracks per genre
 - Capture 'loudness' in addition to the other track features
