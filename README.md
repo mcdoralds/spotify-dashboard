@@ -1,6 +1,12 @@
 # Spotify Data Analysis
 NOTE: THE CURRENT PROJECT IS A WIP AS OF 20 NOV 2023
 
+### Purpose
+The first step is always to determine what questions are being asked, and what hypotheses are being tested. 
+For this project, the overarching question was "what cool things can I discover by looking at the data retrievable with the Spotify API?" Some additional questions include:
+- a
+- s
+
 ## Introduction
 ### Tools
 - Spotify Developer API ([Link to Spotify API documentation](https://developer.spotify.com/documentation/web-api))
@@ -9,6 +15,8 @@ NOTE: THE CURRENT PROJECT IS A WIP AS OF 20 NOV 2023
 - Tableau Public
   
 ## Analysis
+
+### * * * I. Exploratory Analysis * * * 
 ### Step 1 - Create datasets
 This readme details the steps taken to retreive Spotify tracks by genre and analysis of said data. Data is stored in a pandas dataframe and then exported to a csv.
 
@@ -73,5 +81,11 @@ This may result in some interesting observations and conclusions.
 ERROR 429 - Timeout errors: 
 ![2 1 api call error](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/b5381544-01b0-42b9-ba0d-fb09e349e5c4)
 
+### * * * II.  * * *
+- Include genre as a column
+- Record more tracks per genre
+- Capture 'loudness' in addition to the other track features
+- Get track release date for the dataset
+- Write data to spreadsheet after each genre rather than at the very end
 
 ## Results
