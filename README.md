@@ -4,8 +4,8 @@ NOTE: THE CURRENT PROJECT IS A WIP AS OF 20 NOV 2023
 ### Purpose
 The first step is always to determine what questions are being asked, and what hypotheses are being tested. 
 For this project, the overarching question was "what cool things can I discover by looking at the data retrievable with the Spotify API?" Some additional questions include:
-- a
-- s
+- Is there a relationship between track features (e.g. valence, tempo, danceability) and song popularity?
+- Is there a relationship between other track details (e.g. track title, track artist, track duration) and song popularity?
 
 ## Introduction
 ### Tools
@@ -20,7 +20,9 @@ For this project, the overarching question was "what cool things can I discover 
 ### Step 1 - Create datasets
 This readme details the steps taken to retreive Spotify tracks by genre and analysis of said data. Data is stored in a pandas dataframe and then exported to a csv.
 
-The first step was to write a script to call the Spotify API and retrieve tracks and track details. The script loops through the main genre nodes and retrieves a variable number of tracks per genre. For this sample dataset, the number of tracks per genre was limited to 10.
+The first step was to write a script to call the Spotify API and retrieve tracks and track details. The script loops through the main genre nodes and retrieves a variable number of tracks per genre. The track details for each track received are recorded into a spreadsheet. 
+
+For this sample dataset, the number of tracks per genre was limited to ~10~ 20. The number of (main) genres appears to be . Spotify's documentation does not specify how the API determines which tracks are returned                                         per genre.
 
 ~
 
