@@ -31,18 +31,16 @@ _- Spotify new releases (albums & singles)_
 
 
 ### Step 2 - Exploratory analysis
+#### Excel
 Some of the columns needed to be converted and properly formatted before continuing.
 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/499f40dc-d24b-4ea8-ba3d-6ef289112d32)
 
-Sorting the dataset by Track ID (unique) revealed that there were some duplicates to be removed.
-
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4591cfc5-5e94-4775-b07e-fc2e96c3a78a)
-
-950 records remained once duplicates were deleted from the dataset, as shown below.
+Sorting the dataset by Track ID (unique) revealed that there were some duplicates to be removed. 
 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/0fd97307-898b-435c-8ccd-29d67b084781)
 
+### Jupyter Notebook
 The csv was then imported into a jupyter notebook for further cleanup and editing.
 
 ![4 import to jupyter](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/07a98d17-f63b-43ae-b189-8101bf11c354)
@@ -63,30 +61,40 @@ Tracks can be analyzed by multiple elements and dimensions. In the scatterplot b
 _See jupyter notebook for additional analyses of the dataset._
 
 ### Step 3 - Additional analysis
-Chat GPT and other AI tools can be used to do any further analysis or serve as a sanity checks / brainstorming.
+#### AI Tools
+  Chat GPT and other AI tools can be used to do any further analysis or serve as a sanity checks / brainstorming.
+  
+  ![6 Chat gpt](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ffe71315-964e-430d-b757-5f7845fedfc0)
+  
+  The Chat GPT results detail methods already done by the user, but sometimes it's helpful to probe deeper.
+  
+  ![6 1 Chat gpt](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5197e172-7e32-44b0-88fa-376cba25c8cf)
+  
+  This may result in some interesting observations and conclusions.
+  
+  ![6 2 chat gpt conclusions](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/f2e610c0-559f-4e5c-bd4d-c76fd9a0724d)
 
-![6 Chat gpt](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ffe71315-964e-430d-b757-5f7845fedfc0)
-
-The Chat GPT results more or less detail methods already done by the user, but sometimes it's helpful to probe deeper.
-
-![6 1 Chat gpt](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5197e172-7e32-44b0-88fa-376cba25c8cf)
-
-This may result in some interesting observations and conclusions.
-
-![6 2 chat gpt conclusions](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/f2e610c0-559f-4e5c-bd4d-c76fd9a0724d)
+#### Collecting More Data
+While the first dataset was a good starting place to analyze and visualize Spotify track data, some important and valuable datapoints were not yet captured. Adding 'genre' and 'release_date', and 'loudness' to a lesser degree lends itself to more robust analysis. The number of tracks per genre is also increased to 20, from 10.
 
 ### Step 4 - Visualization & dashboarding
 
 ### * * * II.  * * *
-#### Challenges
+#### Challenge
 ERROR 429 - Timeout errors when attempting to repeat process with an increased number of tracks collected: 
 
 ![2 1 api call error](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/b5381544-01b0-42b9-ba0d-fb09e349e5c4)
 
-- Include genre as a column
-- Record more tracks per genre
-- Capture 'loudness' in addition to the other track features
-- Get track release date for the dataset
+#### Solution
+- Increase sleep timer between API calls 
 - Write data to spreadsheet after each genre rather than at the very end
+- To avoid duplicates, create a file to track last genre processed so that the script can start from where it left off if were to crash
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4757a668-d7c0-4f5d-b4f0-49128cf684a7)
+- Print track details 
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
+
+
+
+
 
 ## Results
