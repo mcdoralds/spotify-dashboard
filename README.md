@@ -22,7 +22,11 @@ This readme details the steps taken to retreive Spotify tracks by genre and anal
 
 The first step was to write a script to call the Spotify API and retrieve tracks and track details. The script loops through the main genre nodes and retrieves a variable number of tracks per genre. The track details for each track received are recorded into a spreadsheet. 
 
-For this sample dataset, the number of tracks per genre was limited to ~10~ 20. The number of (main) genres appears to be . Spotify's documentation does not specify how the API determines which tracks are returned                                         per genre.
+For this sample dataset, the number of tracks per genre was limited to ~10~ 20. The number of genres appears to be over 100. Spotify's documentation does not specify how the API determines which tracks are returned for each genre. 
+  - It does not appear to be by popularity based on the popularity distribution of the dataset
+  ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/71e37373-2721-4396-be80-b8d2eff0926d)
+
+
 
 ~
 
@@ -80,6 +84,7 @@ _See jupyter notebook for additional analyses of the dataset._
 While the first dataset was a good starting place to analyze and visualize Spotify track data, some important and valuable datapoints were not yet captured. Adding 'genre' and 'release_date', and 'loudness' to a lesser degree lends itself to more robust analysis. The number of tracks per genre is also increased to 20, from 10.
 
 ### Step 4 - Visualization & dashboarding
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/c435d16b-cdac-4019-bde0-49c032249513)
 
 ### * * * II.  * * *
 #### Challenge
@@ -94,9 +99,6 @@ ERROR 429 - Timeout errors when attempting to repeat process with an increased n
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4757a668-d7c0-4f5d-b4f0-49128cf684a7)
 - Print track details 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
-
-
-
 
 
 ## Results
