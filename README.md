@@ -101,6 +101,7 @@ Even with timeouts written into the script, Error 429 timeouts proved to be a ro
   - Increase sleep timer between API calls 
   - Write data to spreadsheet after each genre rather than at the very end
   - To avoid duplicates, create a file to track last genre processed so that the script can start from where it left off if were to crash
+
   ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4757a668-d7c0-4f5d-b4f0-49128cf684a7)
   - Print track details 
   ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
