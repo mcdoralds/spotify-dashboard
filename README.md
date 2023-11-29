@@ -1,5 +1,5 @@
 # Spotify Data Analysis
-NOTE: THE CURRENT PROJECT IS A WIP AS OF 20 NOV 2023
+NOTE: THE CURRENT PROJECT IS A WIP
 
 ### Purpose
 The first step is always to determine what questions are being asked, and what hypotheses are being tested. 
@@ -23,10 +23,6 @@ This readme details the steps taken to retreive Spotify tracks by genre and anal
 The first step was to write a script to call the Spotify API and retrieve tracks and track details. The script loops through the main genre nodes and retrieves a variable number of tracks per genre. The track details for each track received are recorded into a spreadsheet. 
 
 For this sample dataset, the number of tracks per genre was limited to ~10~ 20. The number of genres appears to be over 100. Spotify's documentation does not specify how the API determines which tracks are returned for each genre. 
-  - It does not appear to be by popularity based on the popularity distribution of the dataset
-  ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/71e37373-2721-4396-be80-b8d2eff0926d)
-
-
 
 ~
 
@@ -86,21 +82,28 @@ While the first dataset was a good starting place to analyze and visualize Spoti
 ### Step 4 - Visualization & dashboarding
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/c435d16b-cdac-4019-bde0-49c032249513)
 
-<div class='tableauPlaceholder' id='viz1700897204531' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpotifyData_17008109634340&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpotifyData_17008109634340&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpotifyData_17008109634340&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+The purpose of the visualization below is to see the distribution of track characteristics for the dataset. 
+For example, the embedded story below shows that the dataset collected across genres has mostly non-acoustic non-instrumental tracks. 
+<div class='tableauPlaceholder' id='viz1701293528772' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpotifyData_17008109634340&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SpotifyData_17008109634340&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;SpotifyData_17008109634340&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object>
+
+When a detail, e.g. a Track Name, is selected, the graph displays where that particular track's characteristics fall in relation to other songs.
+For example, Fetty Wap's "Trap Queen" has high Energy, Valence, Loudness, and Danceability. It has low Instrumentalness and Acousticness.
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4b3dcffb-b4b4-40ea-be45-9500a509e8e4)
 
 ### * * * II.  * * *
-#### Challenge
+#### Challenge - API CALL
 ERROR 429 - Timeout errors when attempting to repeat process with an increased number of tracks collected: 
 
+Even with timeouts written into the script, Error 429 timeouts proved to be a roadblock due. Spotify appears to have a "soft ban" implemented for users with too many 429 errors, which lasts ~15 hours. 
 ![2 1 api call error](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/b5381544-01b0-42b9-ba0d-fb09e349e5c4)
 
-#### Solution
-- Increase sleep timer between API calls 
-- Write data to spreadsheet after each genre rather than at the very end
-- To avoid duplicates, create a file to track last genre processed so that the script can start from where it left off if were to crash
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4757a668-d7c0-4f5d-b4f0-49128cf684a7)
-- Print track details 
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
+  #### Solution
+  - Increase sleep timer between API calls 
+  - Write data to spreadsheet after each genre rather than at the very end
+  - To avoid duplicates, create a file to track last genre processed so that the script can start from where it left off if were to crash
+  ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4757a668-d7c0-4f5d-b4f0-49128cf684a7)
+  - Print track details 
+  ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
 
 
 ## Results
