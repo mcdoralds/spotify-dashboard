@@ -79,6 +79,8 @@ _See jupyter notebook for additional analyses of the dataset._
 #### Collecting More Data
 While the first dataset was a good starting place to analyze and visualize Spotify track data, some important and valuable datapoints were not yet captured. Adding 'genre' and 'release_date', and 'loudness' to a lesser degree lends itself to more robust analysis. The number of tracks per genre is also increased to 20, from 10.
 
+see more: "Challenge - API CALL" in section II of this readme
+
 ### Step 4 - Visualization & dashboarding
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/c435d16b-cdac-4019-bde0-49c032249513)
 
