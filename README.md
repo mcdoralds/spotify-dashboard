@@ -82,7 +82,16 @@ While the first dataset was a good starting place to analyze and visualize Spoti
 see more: "Challenge - API CALL" in section II of this readme
 
 ### Step 4 - Visualization & dashboarding
+The visualization below shows the distribution of track genres for the given dataset. Though the dataset contains tracks across over 100 genres, this visualization shows that there were notably more rock and alt-rock, raggaeton and hiphop, pop (both dance pop and pop from Eastern Asia), and various other electronic subgenres.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/c435d16b-cdac-4019-bde0-49c032249513)
+
+The box and whisker plot below displays the average popularity of track genres across the decades. It allows the comparison of tracks in the dataset by the era it was released and opens up the ability to see which genres were exceptionally popular or unpopular for each genre. 
+
+At a quick glance, it is apparent that the dataset largely consists of tracks released in 1990 or later, with the more recent decades having a larger variety of genres and average popularities.
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/6be2f89d-f118-4995-9a13-48c4567e33a7)
+
+
 
 The purpose of the visualization below is to see the distribution of track characteristics for the dataset. 
 For example, the embedded story below shows that the dataset collected across genres has mostly non-acoustic non-instrumental tracks. 
