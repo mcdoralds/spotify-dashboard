@@ -105,6 +105,21 @@ When a detail, e.g. a Track Name, is selected, the graph displays where that par
 For example, Fetty Wap's "Trap Queen" has high Energy, Valence, Loudness, and Danceability. It has low Instrumentalness and Acousticness.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4b3dcffb-b4b4-40ea-be45-9500a509e8e4)
 
+#### 
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/f675cc0d-aa3e-44bd-a4b5-4972732071d1)
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/8a7206eb-cc2b-4edb-966a-70c46239eabd)
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/941621b2-cf94-4180-aaa6-cc18a9f1e1bb)
+
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/be35bfc1-6ef1-4262-a2a5-7f01798245af)
+
+
+
+
+
 ### * * * II.  * * *
 #### Challenge - API CALL
 ERROR 429 - Timeout errors when attempting to repeat process with an increased number of tracks collected: 
