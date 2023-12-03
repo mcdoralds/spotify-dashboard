@@ -81,10 +81,9 @@ _See jupyter notebook for additional analyses of the dataset._
 #### Collecting More Data
 While the first dataset was a good starting place to analyze and visualize Spotify track data, some important and valuable datapoints were not yet captured. Adding 'genre' and 'release_date', and 'loudness' to a lesser degree lends itself to more robust analysis. The number of tracks per genre is also increased to 20, from 10.
 
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/12a5c5a9-4d3b-403a-a6c4-f4d1dc41121a)
+
 see more: "Challenge - API CALL" in section II of this readme
-
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/87da7bb9-5c57-4482-a2de-e7b4596493cf)
-
 
 ### Step 4 - Visualization & dashboarding
 The visualization below shows the distribution of track genres for the given dataset. Though the dataset contains tracks across over 100 genres, this visualization shows that there were notably more rock and alt-rock, raggaeton and hiphop, pop (both dance pop and pop from Eastern Asia), and various other electronic subgenres.
