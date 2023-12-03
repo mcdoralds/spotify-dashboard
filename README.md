@@ -6,7 +6,9 @@ The first step is always to determine what questions are being asked, and what h
 For this project, the overarching question was "what cool things can I discover by looking at the data retrievable with the Spotify API?" Some additional questions include:
 - Is there a relationship between track features (e.g. valence, tempo, danceability) and song popularity?
 - Is there a relationship between other track details (e.g. track title, track artist, track duration) and song popularity?
-
+- Is there a relationship between track features and the genre that Spotify uses to categorize it?
+- How have song characteristics or popular trends changed over time?
+  
 ## Introduction
 ### Tools
 - Spotify Developer API ([Link to Spotify API documentation](https://developer.spotify.com/documentation/web-api))
