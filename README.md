@@ -83,6 +83,9 @@ While the first dataset was a good starting place to analyze and visualize Spoti
 
 see more: "Challenge - API CALL" in section II of this readme
 
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/87da7bb9-5c57-4482-a2de-e7b4596493cf)
+
+
 ### Step 4 - Visualization & dashboarding
 The visualization below shows the distribution of track genres for the given dataset. Though the dataset contains tracks across over 100 genres, this visualization shows that there were notably more rock and alt-rock, raggaeton and hiphop, pop (both dance pop and pop from Eastern Asia), and various other electronic subgenres.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/c435d16b-cdac-4019-bde0-49c032249513)
