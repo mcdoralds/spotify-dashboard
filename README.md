@@ -111,10 +111,9 @@ While the second data pull added new fields for a more robust analysis, Spotify'
 Instead, the Spotify-provided genres would be considered 'sub-genre', while a broader 'genre' would be applied to all records. 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/be35bfc1-6ef1-4262-a2a5-7f01798245af)
 Using a combination of online lists, Chat GPT, and personal understanding of music genres, all tracks are assigned a overarching 'genre'
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/6a5f582f-29d7-4268-b9b4-9be805c8f654)
-
-The visualizations below provide a graphical representation of the new 'genre' category.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5c587147-3e0b-4359-be99-58452b800e51)
+The visualizations below provide a graphical representation of the new 'genre' category.
+
 The genres are further separated into the sub-genres provided from Spotify's API.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ba3d317d-22e8-4d97-a145-a3598fe8c622)
 
