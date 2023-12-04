@@ -118,7 +118,8 @@ The visualizations below provide a graphical representation of the new 'genre' c
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/358d53e5-e46f-4f78-b8bf-c3c919d0addf)
 The genres are further separated into the sub-genres provided from Spotify's API.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ba3d317d-22e8-4d97-a145-a3598fe8c622)
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/b9caa39c-8c40-4036-bfbc-f1dbb1e302b6)
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/44579224-0a1e-4229-acd9-fe314c62c4f7)
+
 
 
 
