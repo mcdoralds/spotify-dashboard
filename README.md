@@ -119,7 +119,14 @@ For example, Fetty Wap's "Trap Queen" has high Energy, Valence, Loudness, and Da
 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/6a5f582f-29d7-4268-b9b4-9be805c8f654)
 
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/94c1e07a-2723-4c73-b002-c0e52973255c)
 
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/626f262d-a2ff-436a-a8f8-a28157d3de25)
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5c587147-3e0b-4359-be99-58452b800e51)
+
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ba3d317d-22e8-4d97-a145-a3598fe8c622)
 
 
 
