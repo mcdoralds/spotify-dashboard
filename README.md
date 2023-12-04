@@ -121,7 +121,7 @@ The genres are further separated into the sub-genres provided from Spotify's API
 
 
 
-### * * * II.  * * *
+### * * * II.  Challenges * * *
 #### Challenge - API CALL
 ERROR 429 - Timeout errors when attempting to repeat process with an increased number of tracks collected: 
 
