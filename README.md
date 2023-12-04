@@ -105,27 +105,16 @@ When a detail, e.g. a Track Name, is selected, the graph displays where that par
 For example, Fetty Wap's "Trap Queen" has high Energy, Valence, Loudness, and Danceability. It has low Instrumentalness and Acousticness.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/4b3dcffb-b4b4-40ea-be45-9500a509e8e4)
 
-#### 
-
+#### Collecting More Data, Pt. 2
+While the second data pull added new fields for a more robust analysis, Spotify's genre seeds yielded too many different genres to see trends and relationships relating to the track genre. 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/f675cc0d-aa3e-44bd-a4b5-4972732071d1)
-
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/8a7206eb-cc2b-4edb-966a-70c46239eabd)
-
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/941621b2-cf94-4180-aaa6-cc18a9f1e1bb)
-
-
+Instead, the Spotify-provided genres would be considered 'sub-genre', while a broader 'genre' would be applied to all records. 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/be35bfc1-6ef1-4262-a2a5-7f01798245af)
-
-
+Using a combination of online lists, Chat GPT, and personal understanding of music genres, all tracks are assigned a overarching 'genre'
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/6a5f582f-29d7-4268-b9b4-9be805c8f654)
 
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/94c1e07a-2723-4c73-b002-c0e52973255c)
-
-
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/626f262d-a2ff-436a-a8f8-a28157d3de25)
-
+The visualizations below provide a graphical representation of the new 'genre' category.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5c587147-3e0b-4359-be99-58452b800e51)
-
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ba3d317d-22e8-4d97-a145-a3598fe8c622)
 
 
@@ -146,5 +135,8 @@ Even with timeouts written into the script, Error 429 timeouts proved to be a ro
   - Print track details 
   ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
 
-
+#### Challenge - Tracks with no sub-genre
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/94c1e07a-2723-4c73-b002-c0e52973255c)
+#### Solution
+![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/626f262d-a2ff-436a-a8f8-a28157d3de25)
 ## Results
