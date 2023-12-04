@@ -115,6 +115,7 @@ Using a combination of online lists, Chat GPT, and personal understanding of mus
 
 The visualizations below provide a graphical representation of the new 'genre' category.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5c587147-3e0b-4359-be99-58452b800e51)
+The genres are further separated into the sub-genres provided from Spotify's API.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ba3d317d-22e8-4d97-a145-a3598fe8c622)
 
 
