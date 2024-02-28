@@ -17,9 +17,7 @@ For this project, the overarching question was "what cool things can I discover 
 - Tableau Public
   
 ## Analysis
-
-### * * * I. Exploratory Analysis * * * 
-### Step 1 - Create datasets
+### * * * I. Data Collection * * * 
 This readme details the steps taken to retreive Spotify tracks by genre and analysis of said data. Data is stored in a pandas dataframe and then exported to a csv.
 
 The first step was to write a script to call the Spotify API and retrieve tracks and track details. The script loops through the main genre nodes and retrieves a variable number of tracks per genre. The track details for each track received are recorded into a spreadsheet. 
@@ -34,8 +32,8 @@ _- Spotify new releases (albums & singles)_
 
 
 
-### Step 2 - Exploratory analysis
-#### Excel
+### * * * II. Analysis * * * 
+#### Exploratory Analysis
 Some of the columns needed to be converted and properly formatted before continuing.
 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/499f40dc-d24b-4ea8-ba3d-6ef289112d32)
@@ -44,7 +42,6 @@ Sorting the dataset by Track ID (unique) revealed that there were some duplicate
 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/0fd97307-898b-435c-8ccd-29d67b084781)
 
-### Jupyter Notebook
 The csv was then imported into a jupyter notebook for further cleanup and editing.
 
 ![4 import to jupyter](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/07a98d17-f63b-43ae-b189-8101bf11c354)
@@ -64,20 +61,6 @@ Tracks can be analyzed by multiple elements and dimensions. In the scatterplot b
 ![5 7 Danceability by Popularity sized by Tempo colored by energy](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/3642738a-94b8-45bc-bb61-aff3c831dc35)
 _See jupyter notebook for additional analyses of the dataset._
 
-### Step 3 - Additional analysis
-#### AI Tools
-  Chat GPT and other AI tools can be used to do any further analysis or serve as a sanity checks / brainstorming.
-  
-  ![6 Chat gpt](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/ffe71315-964e-430d-b757-5f7845fedfc0)
-  
-  The Chat GPT results detail methods already done by the user, but sometimes it's helpful to probe deeper.
-  
-  ![6 1 Chat gpt](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/5197e172-7e32-44b0-88fa-376cba25c8cf)
-  
-  This may result in some interesting observations and conclusions.
-  
-  ![6 2 chat gpt conclusions](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/f2e610c0-559f-4e5c-bd4d-c76fd9a0724d)
-
 #### Collecting More Data
 While the first dataset was a good starting place to analyze and visualize Spotify track data, some important and valuable datapoints were not yet captured. Adding 'genre' and 'release_date', and 'loudness' to a lesser degree lends itself to more robust analysis. The number of tracks per genre is also increased to 20, from 10.
 
@@ -85,7 +68,7 @@ While the first dataset was a good starting place to analyze and visualize Spoti
 
 see more: "Challenge - API CALL" in section II of this readme
 
-### Step 4 - Visualization & dashboarding
+### Visualization & dashboarding
 The visualization below shows the distribution of track genres for the given dataset. Though the dataset contains tracks across over 100 genres, this visualization shows that there were notably more rock and alt-rock, raggaeton and hiphop, pop (both dance pop and pop from Eastern Asia), and various other electronic subgenres.
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/c435d16b-cdac-4019-bde0-49c032249513)
 
@@ -94,8 +77,6 @@ The box and whisker plot below displays the average popularity of track genres a
 At a quick glance, it is apparent that the dataset largely consists of tracks released in 1990 or later, with the more recent decades having a larger variety of genres and average popularities.
 
 ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/6be2f89d-f118-4995-9a13-48c4567e33a7)
-
-
 
 The purpose of the visualization below is to see the distribution of track characteristics for the dataset. 
 For example, the embedded story below shows that the dataset collected across genres has mostly non-acoustic non-instrumental tracks. 
@@ -130,7 +111,7 @@ ERROR 429 - Timeout errors when attempting to repeat process with an increased n
 Even with timeouts written into the script, Error 429 timeouts proved to be a roadblock due. Spotify appears to have a "soft ban" implemented for users with too many 429 errors, which lasts ~15 hours. 
 ![2 1 api call error](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/b5381544-01b0-42b9-ba0d-fb09e349e5c4)
 
-  #### Solution
+  #### Solution: Challenge - API CALL
   - Increase sleep timer between API calls 
   - Write data to spreadsheet after each genre rather than at the very end
   - To avoid duplicates, create a file to track last genre processed so that the script can start from where it left off if were to crash
@@ -138,8 +119,5 @@ Even with timeouts written into the script, Error 429 timeouts proved to be a ro
   - Print track details 
   ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
 
-#### Challenge - Tracks with no sub-genre
-![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/626f262d-a2ff-436a-a8f8-a28157d3de25)
-#### Solution
 
 ## Results
