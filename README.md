@@ -119,5 +119,3 @@ Even with timeouts written into the script, Error 429 timeouts proved to be a ro
   - Print track details 
   ![image](https://github.com/mcdoralds/spotify-dashboard/assets/31219195/80fbf331-3541-466a-ba93-92f22d045d58)
 
-
-## Results
